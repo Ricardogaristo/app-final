@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts_admin.appadmin')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Escritorio') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,10 +14,10 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged Admin!') }}
+                    {{ __('Bienvenido Administrador') }}
                 </div>
-            </div>
-            <p>hola admin</p>
+            </div><br>
+
         </div>
     </div>
 </div>
