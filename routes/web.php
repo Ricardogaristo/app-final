@@ -27,4 +27,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/user',[\App\Http\Controllers\HomeController::class, 'getUser']);
-Route::post('/admin/addperson', [App\Http\Controllers\HomeController::class, 'getStore'])->name('HomeController.getStore');
+Route::post('/admin/addperson', [\App\Http\Controllers\PagesController::class, 'store'])->name('notas.crear');
