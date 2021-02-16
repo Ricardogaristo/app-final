@@ -7,14 +7,11 @@ use App\Models\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
+use Illuminate\View\View;
 
 class PagesController extends Controller
 {
-    public function mostrar(){
 
-        $mostrar_datos = DB::table('projects')->get();
-        return $mostrar_datos;
-    }
     public function store(Request $request){
 
         $project = new Project();

@@ -17,7 +17,6 @@
                     {{ __('Bienvenido Administrador') }}
                 </div>
             </div><br>
-
         </div>
     </div>
 </div>
